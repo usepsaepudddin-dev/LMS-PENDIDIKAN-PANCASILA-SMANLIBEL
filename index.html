@@ -108,6 +108,17 @@
             justify-content: center;
             flex-shrink: 0;
         }
+        /* Memberikan aksen warna ungu/indigo modern khusus menu Asesmen Sumatif */
+        .card-asesmen .icon-wrapper {
+        background-color: #6366f1; 
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 8px;
+        }
+
 
         .icon-wrapper svg {
             width: 28px;
@@ -143,10 +154,9 @@
     </style>
 </head>
 <body>
-
     <div class="lms-container">
         <div class="lms-header">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg" alt="Garuda Pancasila" class="garuda-logo" alt="Garuda Pancasila" class="garuda-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg" alt="Garuda Pancasila" class="garuda-logo">
             <h1>LMS PENDIDIKAN PANCASILA</h1>
             <h2>SMAN 15 Maluku Tengah</h2>
             <div class="badge-mapel">Materi Tatap Muka & Ujian</div>
@@ -178,21 +188,36 @@
                 </div>
             </a>
 
+            <!-- PANEL BARU: Mengarah ke file siswa.html -->
+                        <!-- PANEL: Mengarah ke file siswa.html dengan Ikon Sumatif Baru -->
+            <a href="siswa.html" class="menu-card card-asesmen">
+                <div class="icon-wrapper">
+                    <!-- Ikon Lembar Ujian & Bintang Evaluasi Sumatif -->
+                    <svg viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1s-1-.45-1-1V4c0-.55-.45-1-1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2zm-5.75 6.75l-1.5-1.5 1.06-1.06.44.44 1.44-1.44 1.06 1.06-2.5 2.5z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="menu-info">
+                    <h3>Asesmen Sumatif</h3>
+                    <p>Menu evaluasi akhir capaian pembelajaran siswa.</p>
+                </div>
+            </a>
+
+
             <!-- Mengarah ke file admin.html -->
-            <!-- Buka index.html dan pastikan bagian href ini benar -->
-        <a href="admin.html" class="menu-card card-admin">
-            <div class="icon-wrapper">
-                <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3-1.57-3-3.5s1.07-3.5 3-3.5 3 1.57 3 3.5-1.07 3.5-3 3.5z"/></svg>
-            </div>
-            <div class="menu-info">
-                <h3>Panel Admin / Guru</h3>
-                <p>Rekapitulasi nilai siswa dan pengaturan link Google Docs.</p>
-            </div>
-        </a>
-        <!-- MENU BARU: Panel Keluar Aplikasi -->
+            <a href="admin.html" class="menu-card card-admin">
+                <div class="icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3-1.57-3-3.5s1.07-3.5 3-3.5 3 1.57 3 3.5-1.07 3.5-3 3.5z"/></svg>
+                </div>
+                <div class="menu-info">
+                    <h3>Panel Admin / Guru</h3>
+                    <p>Rekapitulasi nilai siswa dan pengaturan link Google Docs.</p>
+                </div>
+            </a>
+
+            <!-- MENU BARU: Panel Keluar Aplikasi -->
             <div class="menu-card card-keluar" onclick="tutupAplikasi()">
                 <div class="icon-wrapper">
-                    <!-- Ikon Tombol Power / Keluar -->
                     <svg viewBox="0 0 24 24"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
                 </div>
                 <div class="menu-info">
