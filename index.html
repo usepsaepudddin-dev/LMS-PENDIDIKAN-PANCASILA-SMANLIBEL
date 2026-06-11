@@ -111,7 +111,16 @@
         /* Memberikan aksen warna ungu/indigo modern khusus menu Asesmen Sumatif */
         .card-asesmen .icon-wrapper {
         background-color: #6366f1; 
-        color: #b4cc5d;
+        color: #edeee9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 8px;
+        }
+        .card-rapot .icon-wrapper {
+        background-color: #130202; 
+        color: #e9e9ee;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -128,12 +137,18 @@
 
         .card-latihan { border-left: 6px solid #3182ce; }
         .card-latihan .icon-wrapper { background-color: #3182ce; }
+
         .card-lkpd { border-left: 6px solid #22c55e; }
         .card-lkpd .icon-wrapper { background-color: #22c55e; }
+
         .card-asesmen { border-left: 6px solid #9f22c5; }
         .card-asesmen .icon-wrapper { background-color: #b92ee4; }
-        .card-admin { border-left: 6px solid #f43f5e; }
-        .card-admin .icon-wrapper { background-color: #f43f5e; }
+
+        .card-admin { border-left: 6px solid #1a080b; }
+        .card-admin .icon-wrapper { background-color: #270d11; }
+
+        .card-rapot { border-left: 6px solid #f43f5e; }
+        .card-rapot .icon-wrapper { background-color: #f43f5e; }
 
         .menu-info {
             text-align: left;
@@ -202,6 +217,23 @@
                     <p>Menu evaluasi akhir capaian pembelajaran siswa.</p>
                 </div>
             </a>
+
+            <a href="rapot.html" class="menu-card card-rapot">
+    <div class="icon-wrapper">
+        <!-- Ikon SVG diganti menjadi dokumen/buku raport dengan tanda centang nilai -->
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+    </div>
+    <div class="menu-info">
+        <h3>Estimasi Nilai Rapot</h3>
+        <p>Jika Belum Mencapai KKTP Segera Menghubungi Guru Sebelum Terlambat</p>
+    </div>
+</a>
 
 
             <!-- Mengarah ke file admin.html -->
